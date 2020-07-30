@@ -5,30 +5,8 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/"
+  "mongodb://localhost/tool_next_door"
 );
-
-const toolSeed = [
-    {
-        category: "",
-        name: "",
-        picture: "",
-        price: 0
-    },
-    {
-        category: "",
-        name: "",
-        picture: "",
-        price: 0
-    },
-    {
-        category: "",
-        name: "",
-        picture: "",
-        price: 0
-    }
-
-];
 
 const ownerSeed = [
     {
@@ -45,25 +23,54 @@ const ownerSeed = [
     },
 
 ];
+console.log(db);
+db.Owner.remove({})
+  .then(() => db.Owner.collection.insertMany(ownerSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    console.log(data.result);
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
+  const tim = db.Owner.findOne({ firstName: "Tim" })
+  // tim._id
+
+ const toolSeed = [
+    {
+        category: "",
+        name: "",
+        picture: "",
+        price: 0,
+        _owner: tim._id
+
+    },
+    {
+        category: "",
+        name: "",
+        picture: "",
+        price: 0
+    },
+    {
+        category: "",
+        name: "",
+        picture: "",
+        price: 0
+    }
+
+];
 
 db.Tool.remove({})
   .then(() => db.Tool.collection.insertMany(toolSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
+    console.log(data.result);
     process.exit(0);
   })
   .catch(err => {
     console.error(err);
     process.exit(1);
   });
-db.Owner.remove({})
-  .then(() => db.Owner.collection.insertMany(ownerSeed))
-  .then(data => {
-    console.log(data.result.n + " records inserted!");
-    process.exit(0);
-  })
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
- 
