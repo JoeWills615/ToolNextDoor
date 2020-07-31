@@ -14,6 +14,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 
+
 //Bring in GlobalContext with our DB info
 import {Consumer} from '../../globalContext'
 
@@ -72,7 +73,6 @@ export default function Album() {
    <Consumer>
        {value => {
 console.log(value);
-console.log(value.tool_list[0]);
      return(
 
      
@@ -136,14 +136,11 @@ console.log(value.tool_list[0]);
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Link to={`/tools/${tool.id}`}>
-                      <Button size="small" color="primary"> 
-                       View Info 
-                        </Button>
-                      </Link> 
-                   
                     <Button size="small" color="primary">
-                      Edit
+                     <Link href={`/tools/${tool._id}`}> View Info </Link> 
+                    </Button>
+                    <Button size="small" color="primary">
+                      Buy
                     </Button>
                   </CardActions>
                 </Card>

@@ -5,8 +5,9 @@ import Landing from './components/Landing';
 import Home from './components/Home'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from './components/NavBar';
-
+import ToolView from './components/ToolView/ToolView'
 import { Provider } from './globalContext'
+
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       </Route>
        <Route exact path="/home">
          <Home />
+       </Route>
+       <Route exact path="/tools/:id" component={ToolView}>
+         <ToolView />
        </Route>
      </Switch>
   </div>
