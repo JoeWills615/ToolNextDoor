@@ -9,8 +9,6 @@ router.route("/")
 // Matches with "/api/tools/:id"
 router
   .route("/:id")
-  .get(toolsController.findById)
-  .put(toolsController.update)
-  .delete(toolsController.remove);
+  .get(toolsController.findById);
 
 module.exports = router;

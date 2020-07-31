@@ -6,22 +6,26 @@ import Home from './components/Home'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from './components/NavBar';
 
+import { Provider } from './globalContext'
 
 function App() {
   return (
-    <Router>
+<Provider>
+  <Router>
    <div>
      <NavBar color='dark' />
      <Switch>
        <Route exact path="/">
          <Landing /> 
-       </Route>
+      </Route>
        <Route exact path="/home">
          <Home />
        </Route>
      </Switch>
   </div>
 </Router>
+</Provider>
+    
   )
 }
 
