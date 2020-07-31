@@ -62,7 +62,7 @@ db.Owner.remove({})
         category: "Automotive",
         name: "Breaker Bar",
         picture: "/ToolNextDoor/client/public/img/automotive/breakerBar.jpg",
-        price: 0,
+        price: 4,
         _owner: ""
 
     },
@@ -70,7 +70,7 @@ db.Owner.remove({})
         category: "Automotive",
         name: "Dead Blow Hammer",
         picture: "/ToolNextDoor/client/public/img/automotive/deadBlowHammer.jpg",
-        price: 0,
+        price: 3,
         _owner: ""
 
     },
@@ -78,7 +78,7 @@ db.Owner.remove({})
         category: "Automotive",
         name: "Floor Jack",
         picture: "/ToolNextDoor/client/public/img/automotive/floorJack.jpg",
-        price: 0,
+        price: 7,
         _owner: ""
 
     },
@@ -86,7 +86,7 @@ db.Owner.remove({})
       category: "Automotive",
       name: "Jack Stands",
       picture: "/ToolNextDoor/client/public/img/automotive/jackStands.jpg",
-      price: 0,
+      price: 3,
       _owner: ""
 
   },
@@ -94,7 +94,7 @@ db.Owner.remove({})
       category: "Automotive",
       name: "Multimeter",
       picture: "/ToolNextDoor/client/public/img/automotive/multimeter.jpg",
-      price: 0,
+      price: 5,
       _owner: ""
 
   },
@@ -102,7 +102,7 @@ db.Owner.remove({})
       category: "Automotive",
       name: "OBD2 Scanner",
       picture: "/ToolNextDoor/client/public/img/automotive/OBD2Scanner.jpg",
-      price: 0,
+      price: 6,
       _owner: ""
 
   },
@@ -110,7 +110,7 @@ db.Owner.remove({})
       category: "Automotive",
       name: "Oil Filter Pliers",
       picture: "/ToolNextDoor/client/public/img/automotive/oilFilterPliers.jpg",
-      price: 0,
+      price: 3,
       _owner: ""
 
   },
@@ -118,7 +118,7 @@ db.Owner.remove({})
       category: "Automotive",
       name: "Torque Wrench",
       picture: "/ToolNextDoor/client/public/img/automotive/torqueWrench.jpg",
-      price: 0,
+      price: 4,
       _owner: ""
 
   },
@@ -126,7 +126,7 @@ db.Owner.remove({})
       category: "Automotive",
       name: "Vise Grips",
       picture: "/ToolNextDoor/client/public/img/automotive/viseGrips.jpg",
-      price: 0,
+      price: 2,
       _owner: ""
 
   }

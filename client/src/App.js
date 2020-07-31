@@ -5,6 +5,7 @@ import Landing from './components/Landing';
 import Home from './components/Home'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from './components/NavBar';
+import About from './components/About';
 
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
        </Route>
        <Route exact path="/home">
          <Home />
+       </Route>
+       <Route>
+         <About exact path="/about" />
        </Route>
      </Switch>
   </div>
