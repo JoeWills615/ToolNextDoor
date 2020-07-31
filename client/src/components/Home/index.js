@@ -14,6 +14,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 
+//Bring in GlobalContext with our DB info
+import {Consumer} from '../../globalContext'
+
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -65,13 +69,20 @@ export default function Album() {
   const classes = useStyles();
 
   return (
+   <Consumer>
+       {value => {
+console.log(value);
+console.log(value.tool_list[0]);
+     return(
+
+     
     <React.Fragment>
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
           <CameraIcon className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap>
-            Album layout
+           Tool Next Door
           </Typography>
         </Toolbar>
       </AppBar>
@@ -80,7 +91,7 @@ export default function Album() {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Album layout
+              Tools
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
               Something short and leading about the collection below—its contents, the creator, etc.
@@ -91,12 +102,12 @@ export default function Album() {
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
-                    Main call to action
+                    Search Tools
                   </Button>
                 </Grid>
                 <Grid item>
                   <Button variant="outlined" color="primary">
-                    Secondary action
+                    Post a Tool
                   </Button>
                 </Grid>
               </Grid>
@@ -106,26 +117,31 @@ export default function Album() {
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+            {value.tool_list.map((tool) => (
+              <Grid item key={tool} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
+                    image={tool.picture}
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      {tool.name}
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Price: ${tool.price} per day || {tool.price * 5.5} 
+                     <br/>
+                      Category: {tool.category}
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
+                    <Link to={`/tools/${tool.id}`}>
+                      <Button size="small" color="primary"> 
+                       View Info 
+                        </Button>
+                      </Link> 
+                   
                     <Button size="small" color="primary">
                       Edit
                     </Button>
@@ -147,6 +163,9 @@ export default function Album() {
         <Copyright />
       </footer>
       {/* End footer */}
-    </React.Fragment>
+    </React.Fragment>  
+    ) 
+    }}
+     </Consumer> 
   );
 }
