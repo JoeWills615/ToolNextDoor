@@ -19,7 +19,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        Tool Next Door
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -72,7 +72,12 @@ export default function SignInSide() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-           Sign in
+          <h1>Tool Next Door</h1>
+          <h3>Lease the tools you need to get the job done</h3>
+          <h3>or</h3>
+          <h3>Rent your collection of tools to earn extra cash</h3>
+            
+
           </Typography>
           <form className={classes.form} noValidate>
             <TextField
