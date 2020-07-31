@@ -25,9 +25,10 @@ const ownerSchema = new mongoose.Schema({
 });
 
 const toolSchema = new mongoose.Schema({
-    _owner: [{
+    owners: [{
         type: Schema.Types.ObjectId,
-        ref: "Owner"
+        ref: "Owner",
+        default: []
     }],
     category: {
         type: String,
@@ -48,19 +49,7 @@ const toolSchema = new mongoose.Schema({
     }
 });
 
-const Owner = mongoose.model("Owner", ownerSchema);
-
 const Tool = mongoose.model("Tool", toolSchema);
 
-module.exports = {
-    Tool,
-    Owner
-};
+module.exports = Tool;
  
-
-// function getPrice(num) {
-//     return (num/100).toFixed(2);
-// }
-// function setPrice(num) {
-//     return num*100;
-// }

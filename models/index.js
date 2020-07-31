@@ -1,4 +1,4 @@
 module.exports = {
-    Tool: require("./tools").Tool,
-    Owner: require("./tools").Owner
+    Tool: require("./tools"),
+    Owner: require("./owners")
   };
