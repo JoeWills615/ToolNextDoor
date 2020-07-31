@@ -4,12 +4,14 @@ import './App.css';
 import Landing from './components/Landing';
 import Home from './components/Home'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import NavBar from './components/NavBar';
 
 
 function App() {
   return (
     <Router>
    <div>
+     <NavBar color='dark' />
      <Switch>
        <Route exact path="/">
          <Landing /> 
