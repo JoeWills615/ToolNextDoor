@@ -32,12 +32,13 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
   },
   image: {
-    backgroundImage: 'url(https://m.media-amazon.com/images/M/MV5BMTQ1NDQ1ODU2Ml5BMl5BanBnXkFtZTgwMzA0NTIyMjE@._V1_.jpg)',
+    backgroundImage: 'url(https://countrymusicprep.files.wordpress.com/2020/07/garage.png)',
     backgroundRepeat: 'no-repeat',
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    
   },
   paper: {
     margin: theme.spacing(8, 4),
