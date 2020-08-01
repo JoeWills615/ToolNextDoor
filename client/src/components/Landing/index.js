@@ -57,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+ 
 }));
 
 export default function SignInSide() {
@@ -71,7 +72,7 @@ export default function SignInSide() {
           <Avatar className={classes.avatar}>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography component="h1" variant="h5">
+          <Typography component="div" align="center">
           <h1>Tool Next Door</h1>
           <h3>Lease the tools you need to get the job done</h3>
           <h3>or</h3>
