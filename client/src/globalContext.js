@@ -2,22 +2,28 @@ import React, { Component } from 'react'
 import axios from 'axios';
 
 //Makes info available everywhere in the app
-const Context = React.createContext()
+const Context = React.createContext();
+
+const reducer = (state, action) => {
+    switch(action.type){
+        case 'SEARCH_TOOLS': 
+        return{
+            ...state,
+            tool_list: action.payload,
+            header: "Search Results"
+        };
+        default: 
+        return state;
+    }
+}
 
 export class Provider extends Component {
     state = {
         tool_list: [],
-        owner_list: [
-            {
-                picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpNDJ77ph_wehgVKCf7rWUoEPkUwhvweKqlQ&usqp=CAU",
-                tools: [],
-                _id: "5f248fb244eb9525287434a9",
-                firstName: "Randy",
-                lastName: "Taylor"
-                }
-        ],
-        header: "All Tools"
-    }
+        owner_list: [],
+        header: "All Tools",
+        dispatch: action => this.setState(state => reducer(state, action))
+    };
 
     componentDidMount() {
         axios.get('/api/tools')
@@ -26,12 +32,12 @@ export class Provider extends Component {
             this.setState({tool_list: res.data})
             }) 
             .catch(err => console.log(err))
-        /* axios.get('/api/tools')
+         axios.get('/api/owners')
             .then(res => {
                 console.log(res.data)
-            this.setState({tool_list: res.data})
+            this.setState({owner_list: res.data})
             }) 
-            .catch(err => console.log(err)) */
+            .catch(err => console.log(err)) 
     }
 
 

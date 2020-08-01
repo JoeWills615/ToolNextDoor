@@ -9,8 +9,15 @@ module.exports = {
         .catch(err => res.status(422).json(err));
     },
     findById: (req, res) => {
+      console.log(req.params);
       db.Tool
         .findById(req.params.id)
+        .then(tool => res.json(tool))
+        .catch(err => res.status(422).json(err));
+    },
+    findByName: (req, res) => {
+      db.Tool
+        .find({category: req.params.id})
         .then(tool => res.json(tool))
         .catch(err => res.status(422).json(err));
     },

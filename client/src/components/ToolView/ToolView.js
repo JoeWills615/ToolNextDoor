@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+import axios from 'axios'
 import {Consumer} from '../../globalContext'
 
 const useStyles = makeStyles({
@@ -21,6 +21,16 @@ const useStyles = makeStyles({
 
 
 function ToolView(){
+ const state = {
+    tool: {},
+    owner: {}
+  }
+// Pulling in information about tool
+  /* axios.get(`/api/tools/${this.props.match.params.id}`)
+  .then(res => {
+   console.log(res)
+  }) 
+  .catch(err => console.log(err)) */
 
        const classes = useStyles();
        return (
