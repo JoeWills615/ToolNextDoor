@@ -3,6 +3,7 @@ const db = require("../models");
 
 
 
+
 mongoose.connect(
   process.env.MONGODB_URI ||
   "mongodb://localhost/tool_next_door"
@@ -61,63 +62,63 @@ db.Owner.remove({})
     {
         category: "Automotive",
         name: "Breaker Bar",
-        picture: "/ToolNextDoor/client/public/img/automotive/breakerBar.jpg",
+        picture: "https://static.grainger.com/rp/s/is/image/Grainger/1FX33_AS01",
         price: 0
 
     },
     {
         category: "Automotive",
         name: "Dead Blow Hammer",
-        picture: "/ToolNextDoor/client/public/img/automotive/deadBlowHammer.jpg",
+        picture: "https://images-na.ssl-images-amazon.com/images/I/71aXLaDZh5L._AC_SX425_.jpg",
         price: 0
 
     },
     {
         category: "Automotive",
         name: "Floor Jack",
-        picture: "/ToolNextDoor/client/public/img/automotive/floorJack.jpg",
+        picture: "https://imavex.vo.llnwd.net/o18/clients/runyonrental/images/4902.jpg",
         price: 0
 
     },
     {
         category: "Automotive",
         name: "Jack Stands",
-        picture: "/ToolNextDoor/client/public/img/automotive/jackStands.jpg",
+        picture: "https://images-na.ssl-images-amazon.com/images/I/71FaUHfDdFL._AC_SY355_.jpg",
         price: 0
 
   },
   {
         category: "Automotive",
         name: "Multimeter",
-        picture: "/ToolNextDoor/client/public/img/automotive/multimeter.jpg",
+        picture: "https://images-na.ssl-images-amazon.com/images/I/41AtjGn2E8L.jpg",
         price: 0
 
   },
   {
         category: "Automotive",
         name: "OBD2 Scanner",
-        picture: "/ToolNextDoor/client/public/img/automotive/OBD2Scanner.jpg",
+        picture: "https://images-na.ssl-images-amazon.com/images/I/61ECdxYhR0L._AC_SL1200_.jpg",
         price: 0
 
   },
   {
         category: "Automotive",
         name: "Oil Filter Pliers",
-        picture: "/ToolNextDoor/client/public/img/automotive/oilFilterPliers.jpg",
+        picture: "https://images-na.ssl-images-amazon.com/images/I/41X5UEgAnUL._AC_SX355_.jpg",
         price: 0
 
   },
   {
         category: "Automotive",
         name: "Torque Wrench",
-        picture: "/ToolNextDoor/client/public/img/automotive/torqueWrench.jpg",
+        picture: "https://www.carbibles.com/wp-content/uploads/bfi_thumb/neiko-torque-wrench-6s57hogemajenmqso0iv9k5a8w971wvvrupueisnbza.jpg",
         price: 0
 
   },
   {
         category: "Automotive",
         name: "Vise Grips",
-        picture: "/ToolNextDoor/client/public/img/automotive/viseGrips.jpg",
+        picture: "https://www.irwin.com/uploads/products/large/the-original%E2%84%A2-curved-jaw-locking-pliers-with-wire-cutter-276.jpg",
         price: 0
 
   },
@@ -312,8 +313,148 @@ db.Owner.remove({})
 },
 {
   category: "Other Tools",
-  name: "",
-  picture: "/ToolNextDoor/client/public/img/othertools/.jpg",
+  name: "Air Compressor",
+  picture: "/ToolNextDoor/client/public/img/othertools/aircompressor.jpg",
+  price: 0
+
+},
+{
+  category: "Other Tools",
+  name: "Bolt Cutters",
+  picture: "/ToolNextDoor/client/public/img/othertools/BoltCutters01.jpg",
+  price: 0
+
+},
+{
+  category: "Other Tools",
+  name: "Grinder",
+  picture: "/ToolNextDoor/client/public/img/othertools/grinder.jpg",
+  price: 0
+
+},
+{
+  category: "Other Tools",
+  name: "Leveler",
+  picture: "/ToolNextDoor/client/public/img/othertools/leveler.jpg",
+  price: 0
+
+},
+{
+  category: "Other Tools",
+  name: "Nail Gun",
+  picture: "/ToolNextDoor/client/public/img/othertools/nailGun.jpg",
+  price: 0
+
+},
+{
+  category: "Other Tools",
+  name: "Roofing Nailer",
+  picture: "/ToolNextDoor/client/public/img/othertools/roofingNailer.jpg",
+  price: 0
+
+},
+{
+  category: "Other Tools",
+  name: "Shop Vaccum",
+  picture: "/ToolNextDoor/client/public/img/othertools/shopVaccum.jpg",
+  price: 0
+
+},
+{
+  category: "Other Tools",
+  name: "Telescopic Ladder",
+  picture: "/ToolNextDoor/client/public/img/othertools/telescopicLadder.jpg",
+  price: 0
+
+},
+{
+  category: "Pressure Washers",
+  name: "Pressure Washer (2000 PSI)",
+  picture: "/ToolNextDoor/client/public/img/pressureWashers/PressureWasher2000PSI.jpg",
+  price: 0
+
+},
+{
+  category: "Pressure Washers",
+  name: "Pressure Washer (3000 PSI)",
+  picture: "/ToolNextDoor/client/public/img/pressureWashers/PressureWasher3000PSI.jpg",
+  price: 0
+
+},
+{
+  category: "Pressure Washers",
+  name: "Pressure Washer (3500 PSI)",
+  picture: "/ToolNextDoor/client/public/img/pressureWashers/PressureWasher3500PSI.jpg",
+  price: 0
+
+},
+{
+  category: "Sanders",
+  name: "Belt and Disc Sander",
+  picture: "/ToolNextDoor/client/public/img/sanders/beltAndDiscSander.jpg",
+  price: 0
+
+},
+{
+  category: "Sanders",
+  name: "Dewalt Hand Sander",
+  picture: "/ToolNextDoor/client/public/img/sanders/dewaltHandSander.jpg",
+  price: 0
+
+},
+{
+  category: "Sanders",
+  name: "Dry-wall Sander",
+  picture: "/ToolNextDoor/client/public/img/sanders/dryWallSander.jpg",
+  price: 0
+
+},
+{
+  category: "Sanders",
+  name: "Hand Sander",
+  picture: "/ToolNextDoor/client/public/img/sanders/handSander.jpg",
+  price: 0
+
+},
+{
+  category: "Saws",
+  name: "Skill Saw",
+  picture: "/ToolNextDoor/client/public/img/saws/SkillSaw01.jpg",
+  price: 0
+
+},
+{
+  category: "Saws",
+  name: "Skill Saw",
+  picture: "/ToolNextDoor/client/public/img/saws/SkillSaw02.jpg",
+  price: 0
+
+},
+{
+  category: "Saws",
+  name: "Table Saw",
+  picture: "/ToolNextDoor/client/public/img/saws/TableSaw01.jpg",
+  price: 0
+
+},
+{
+  category: "Saws",
+  name: "Table Saw",
+  picture: "/ToolNextDoor/client/public/img/saws/TableSaw02.jpg",
+  price: 0
+
+},
+{
+  category: "Saws",
+  name: "Table Saw",
+  picture: "/ToolNextDoor/client/public/img/saws/TableSaw03.jpg",
+  price: 0
+
+},
+{
+  category: "Saws",
+  name: "Table Saw",
+  picture: "/ToolNextDoor/client/public/img/saws/TableSaw04.jpg",
   price: 0
 
 },
