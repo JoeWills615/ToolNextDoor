@@ -64,7 +64,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function Album() {
   const classes = useStyles();
@@ -72,10 +71,8 @@ export default function Album() {
   return (
    <Consumer>
        {value => {
-console.log(value);
-     return(
 
-     
+     return( 
     <React.Fragment>
       <CssBaseline />
       <AppBar position="relative">
@@ -133,7 +130,7 @@ console.log(value);
                       {tool.name}
                     </Typography>
                     <Typography>
-                      Price: ${tool.price} per day || {tool.price * 5.5} 
+                      Price: ${tool.price} per day || {tool.price * 4.5} 
                      <br/>
                       Category: {tool.category}
                     </Typography>

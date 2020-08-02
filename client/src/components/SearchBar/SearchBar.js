@@ -37,7 +37,7 @@ class SearchBar extends Component {
             console.log(res);
            let results = res.data.filter(
                (tool) => {
-                   return tool.category.indexOf(this.state.searchTerms) !== -1
+                   return tool.category.toLowerCase().indexOf(this.state.searchTerms.toLowerCase()) !== -1
                }
            ) 
         this.setState({tool_list: results})

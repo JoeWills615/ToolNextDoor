@@ -10,59 +10,68 @@ import Typography from '@material-ui/core/Typography';
 import axios from 'axios'
 import {Consumer} from '../../globalContext'
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 140,
-  },
-});
 
 
-function ToolView(){
- const state = {
+class ToolView extends Component{
+  
+ state = {
     tool: {},
     owner: {}
   }
-// Pulling in information about tool
-  /* axios.get(`/api/tools/${this.props.match.params.id}`)
-  .then(res => {
-   console.log(res)
-  }) 
-  .catch(err => console.log(err)) */
 
-       const classes = useStyles();
-       return (
-      <Card className={classes.root}>
+url = (window.location.pathname.replace("/tools/", "")) 
+
+componentDidMount() {
+  axios
+    .get(`/api/tools/${this.url}`)
+    .then(res => {
+      console.log(res.data)
+  this.setState({tool: res.data})
+  }) 
+  .catch(err => console.log(err))
+}
+      
+      render(){ 
+const {name, category, owners, picture, price} = this.state.tool
+           return(
+             <Card>
       <CardActionArea>
         <CardMedia
-          className={classes.media}
           image="/static/images/cards/contemplative-reptile.jpg"
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            {this.state.tool.name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+           <img src={picture} alt={name} style={{maxWidth: "400px"}}/>
+           <br/>
+            Price: ${price} per day || ${price * 4.5} per week
+            <br/>
+            Category: {category}
+            <br/>
+            Owned By: {owners}
+            <br/>
+
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          Rent
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          View All Tools by This Owner
         </Button>
       </CardActions>
     </Card>
+           )
+         
 
     
- )
+      } 
+      
    
 }
 
