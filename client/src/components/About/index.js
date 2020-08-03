@@ -87,12 +87,12 @@ export default function AboutPage() {
                         <div className={classes.heroButtons}>
                             <Grid container spacing={2} justify="center">
                                 <Grid item>
-                                    <Button variant="contained" color="primary">
+                                    <Button variant="contained" color="dark" href="/Search">
                                         Search Tools
                                 </Button>
                                 </Grid>
                                 <Grid item>
-                                    <Button variant="outlined" color="primary">
+                                    <Button variant="outlined" color="dark" href="/post">
                                         Post a Tool
                                     </Button>
                                 </Grid>
