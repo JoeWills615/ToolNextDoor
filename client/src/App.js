@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import ToolView from './components/ToolView/ToolView';
 import { Provider } from './globalContext';
 import About from './components/About';
+import Post from './components/Post';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
        </Route>
        <Route exact path="/about">
          <About />
+       </Route>
+       <Route exact path="/post">
+         <Post />
        </Route>
        <Route exact path="/tools/:id" component={ToolView}>
          <ToolView />
