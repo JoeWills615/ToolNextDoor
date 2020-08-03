@@ -13,6 +13,13 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Link as RouterLink } from 'react-router-dom';
+import grunt from './sounds/grunt.wav';
+
+const timAllen = new Audio(grunt); 
+
+const playSound = audioFile => {
+  audioFile.play();
+}
 
 function Copyright() {
   return (
@@ -102,6 +109,7 @@ export default function SignIn() {
             label="Remember me"
           />
           <Button
+            onClick={() => playSound(timAllen)}
             type="submit"
             fullWidth
             variant="contained"
