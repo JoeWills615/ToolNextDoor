@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import axios from 'axios'
 import {Consumer} from '../../globalContext'
+import Link from '@material-ui/core/Link';
 
 
 
@@ -62,7 +63,7 @@ const {name, category, owners, picture, price} = this.state.tool
           Rent
         </Button>
         <Button size="small" color="primary">
-          View All Tools by This Owner
+        <Link href={`/owners/${owners}`}> View All Tools by This Owner </Link> 
         </Button>
       </CardActions>
     </Card>
