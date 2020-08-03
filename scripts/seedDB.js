@@ -300,161 +300,161 @@ db.Owner.remove({})
 {
     category: "Lawncare",
     name: "Pruner",
-    picture: "/ToolNextDoor/client/public/img/lawncare/Pruner.jpg",
+    picture: "https://m.media-amazon.com/images/I/61mOfD1MuwL._AC_SS350_.jpg",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Wheelbarrow",
-    picture: "/ToolNextDoor/client/public/img/lawncare/wheelBarrow.jpg",
+    picture: "https://images.homedepot-static.com/productImages/4b701423-fc54-43e6-b436-0cc0404fba97/svn/milwaukee-wheelbarrows-6wbmilhd-64_1000.jpg",
     price: 0
 
 },
 {
   category: "Other Tools",
   name: "Air Compressor",
-  picture: "/ToolNextDoor/client/public/img/othertools/aircompressor.jpg",
+  picture: "https://images-na.ssl-images-amazon.com/images/I/715bxH8p8OL._AC_SY355_.jpg",
   price: 0
 
 },
 {
   category: "Other Tools",
   name: "Bolt Cutters",
-  picture: "/ToolNextDoor/client/public/img/othertools/BoltCutters01.jpg",
+  picture: "https://images-na.ssl-images-amazon.com/images/I/713p8eQsb3L._AC_SX355_.jpg",
   price: 0
 
 },
 {
   category: "Other Tools",
   name: "Grinder",
-  picture: "/ToolNextDoor/client/public/img/othertools/grinder.jpg",
+  picture: "https://mobileimages.lowes.com/product/converted/885911/885911548977.jpg",
   price: 0
 
 },
 {
   category: "Other Tools",
   name: "Leveler",
-  picture: "/ToolNextDoor/client/public/img/othertools/leveler.jpg",
+  picture: "https://ae01.alicdn.com/kf/HTB1HVbvA4uTBuNkHFNRq6A9qpXay/Spirit-Level-600mm-Digital-Laser-Level-Ruler-Angle-Gauge-Finder-Horizontal-Vertical-Cross-Line-Laser-Leveler.jpg_q50.jpg",
   price: 0
 
 },
 {
   category: "Other Tools",
   name: "Nail Gun",
-  picture: "/ToolNextDoor/client/public/img/othertools/nailGun.jpg",
+  picture: "https://sc02.alicdn.com/kf/HTB1dAonacfrK1RkSnb4q6xHRFXaO.jpg",
   price: 0
 
 },
 {
   category: "Other Tools",
   name: "Roofing Nailer",
-  picture: "/ToolNextDoor/client/public/img/othertools/roofingNailer.jpg",
+  picture: "https://images.homedepot-static.com/productImages/cd1daea9-30d6-4c2b-aeb1-be38b68c834c/svn/dewalt-roofing-nailers-dw45rn-64_1000.jpg",
   price: 0
 
 },
 {
   category: "Other Tools",
   name: "Shop Vaccum",
-  picture: "/ToolNextDoor/client/public/img/othertools/shopVaccum.jpg",
+  picture: "https://mobileimages.lowes.com/product/converted/026282/026282940162.jpg?size=pdhi",
   price: 0
 
 },
 {
   category: "Other Tools",
   name: "Telescopic Ladder",
-  picture: "/ToolNextDoor/client/public/img/othertools/telescopicLadder.jpg",
+  picture: "https://i5.walmartimages.com/asr/7e2a3a40-7234-4b5a-920a-3861b47b03c5_1.2248ef7b30c0888c850824ba0aace3b5.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
   price: 0
 
 },
 {
   category: "Pressure Washers",
   name: "Pressure Washer (2000 PSI)",
-  picture: "/ToolNextDoor/client/public/img/pressureWashers/PressureWasher2000PSI.jpg",
+  picture: "https://images.homedepot-static.com/productImages/20dfdcab-bcce-48c8-b12b-239ce543c7ff/svn/ryobi-electric-pressure-washers-ry141900-64_1000.jpg",
   price: 0
 
 },
 {
   category: "Pressure Washers",
   name: "Pressure Washer (3000 PSI)",
-  picture: "/ToolNextDoor/client/public/img/pressureWashers/PressureWasher3000PSI.jpg",
+  picture: "https://images-na.ssl-images-amazon.com/images/I/81NB9Yc1cNL._AC_SY450_.jpg",
   price: 0
 
 },
 {
   category: "Pressure Washers",
   name: "Pressure Washer (3500 PSI)",
-  picture: "/ToolNextDoor/client/public/img/pressureWashers/PressureWasher3500PSI.jpg",
+  picture: "https://objects.blains.com/products/12/600/1259049.jpg",
   price: 0
 
 },
 {
   category: "Sanders",
   name: "Belt and Disc Sander",
-  picture: "/ToolNextDoor/client/public/img/sanders/beltAndDiscSander.jpg",
+  picture: "https://images-na.ssl-images-amazon.com/images/I/81hrbWAyOsL._AC_SX355_.jpg",
   price: 0
 
 },
 {
   category: "Sanders",
   name: "Dewalt Hand Sander",
-  picture: "/ToolNextDoor/client/public/img/sanders/dewaltHandSander.jpg",
+  picture: "https://images-na.ssl-images-amazon.com/images/I/41z1oBml8IL._AC_SY450_.jpg",
   price: 0
 
 },
 {
   category: "Sanders",
   name: "Dry-wall Sander",
-  picture: "/ToolNextDoor/client/public/img/sanders/dryWallSander.jpg",
+  picture: "https://ak1.ostkcdn.com/images/products/is/images/direct/ce2fbbdb1dbb9957194cd04ddd9e648619b756e4/Gymax-Electric-Drywall-Sander-Adjustable-Variable-Speed-with-Vacuum-and-LED-Light.jpg",
   price: 0
 
 },
 {
   category: "Sanders",
   name: "Hand Sander",
-  picture: "/ToolNextDoor/client/public/img/sanders/handSander.jpg",
+  picture: "https://images.homedepot-static.com/productImages/71a2e452-7fa4-4680-8c03-45934ec1f6a4/svn/wal-board-tools-manual-hand-sanders-34-002-64_1000.jpg",
   price: 0
 
 },
 {
   category: "Saws",
   name: "Skill Saw",
-  picture: "/ToolNextDoor/client/public/img/saws/SkillSaw01.jpg",
+  picture: "https://www.portercable.com/NA/product/images/250x250x72/PCE300/PCE300_1.jpg",
   price: 0
 
 },
 {
   category: "Saws",
   name: "Skill Saw",
-  picture: "/ToolNextDoor/client/public/img/saws/SkillSaw02.jpg",
+  picture: "https://mobileimages.lowes.com/product/converted/885911/885911489355.jpg",
   price: 0
 
 },
 {
   category: "Saws",
   name: "Table Saw",
-  picture: "/ToolNextDoor/client/public/img/saws/TableSaw01.jpg",
+  picture: "https://mobileimages.lowes.com/product/converted/889265/889265127093.jpg",
   price: 0
 
 },
 {
   category: "Saws",
   name: "Table Saw",
-  picture: "/ToolNextDoor/client/public/img/saws/TableSaw02.jpg",
+  picture: "https://mobileimages.lowes.com/product/converted/885911/885911329163.jpg",
   price: 0
 
 },
 {
   category: "Saws",
   name: "Table Saw",
-  picture: "/ToolNextDoor/client/public/img/saws/TableSaw03.jpg",
+  picture: "https://images-na.ssl-images-amazon.com/images/I/61ZsrKM9AcL._AC_SL1000_.jpg",
   price: 0
 
 },
 {
   category: "Saws",
   name: "Table Saw",
-  picture: "/ToolNextDoor/client/public/img/saws/TableSaw04.jpg",
+  picture: "https://www.rockler.com/media/catalog/product/cache/3434eb5edc1f5c9809271cab5a58bac7/2/0/20059-01-1000.jpg",
   price: 0
 
 },
