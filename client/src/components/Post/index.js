@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import Button from '@material-ui/core/Button';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -50,6 +52,24 @@ export default function PostPage() {
                     variant="outlined"
                 />
             </div>
+            <label htmlFor="upload-photo">
+                <input
+                    style={{ display: 'none' }}
+                    id="upload-photo"
+                    name="upload-photo"
+                    type="file"
+                />
+
+                <Fab
+                    color="dark"
+                    size="small"
+                    component="span"
+                    aria-label="add"
+                    variant="extended"
+                >
+                    <AddIcon /> Upload photo
+                </Fab>
+            </label>
             <div>
                 <Button
                     variant="contained"
@@ -59,6 +79,7 @@ export default function PostPage() {
                     Upload
                 </Button>
             </div>
+            
         </form>
     );
 }
