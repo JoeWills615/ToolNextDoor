@@ -24,7 +24,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        Chris/Alex/Lex/Joe
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -152,10 +152,10 @@ export default function Album() {
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          Tool Next Door
         </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
+          The TOOLution to your equipment needs!
         </Typography>
         <Copyright />
       </footer>
