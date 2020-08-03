@@ -28,8 +28,10 @@ function Copyright() {
 }
 
 const useStyles = makeStyles((theme) => ({
-  
-  image: {
+    root: {
+        height: '100vh',
+    },
+    image: {
     backgroundImage: 'url(https://countrymusicprep.files.wordpress.com/2020/08/toolcircle.png)',
     backgroundRepeat: 'no-repeat',
     backgroundColor:
@@ -65,8 +67,8 @@ export default function SignIn() {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
+      <Avatar className={classes.orange}>
+            TND
         </Avatar>
         <Typography component="div" align="center">
           <h1>Tool Next Door</h1>
