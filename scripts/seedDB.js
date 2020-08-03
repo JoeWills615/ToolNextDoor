@@ -125,175 +125,175 @@ db.Owner.remove({})
   {
         category: "Drills",
         name: "Concrete Wet Drill",
-        picture: "/ToolNextDoor/client/public/img/drills/ConcreteWetDrill01.jpg",
+        picture: "https://i.ebayimg.com/images/g/AJwAAOSwPgxdd2Lc/s-l1600.jpg",
         price: 0
 
   },
   {
         category: "Drills",
         name: "Cordless Screwdriver",
-        picture: "/ToolNextDoor/client/public/img/drills/CordlessScrewdriver01.jpg",
+        picture: "https://static.grainger.com/rp/s/is/image/Grainger/34G855_AS01?$mdmain$",
         price: 0
 
   },
   {
         category: "Drills",
         name: "Cordless Screwdriver",
-        picture: "/ToolNextDoor/client/public/img/drills/CordlessScrewdriver02.jpg",
+        picture: "https://images.homedepot-static.com/productImages/c74433c1-bc5c-4ee2-947a-50e42745341c/svn/wen-electric-screwdrivers-49036-64_1000.jpg",
         price: 0
 
   },
   {
         category: "Drills",
         name: "Drillbit Set",
-        picture: "/ToolNextDoor/client/public/img/drills/DrillbitSet01.jpg",
+        picture: "https://images.homedepot-static.com/productImages/0fe61d8e-48ec-4773-acce-915b7867d43e/svn/dewalt-twist-drill-bits-dwa1184-64_1000.jpg",
         price: 0
 
   },
   {
         category: "Drills",
         name: "Glass Diamond Drillbit Set",
-        picture: "/ToolNextDoor/client/public/img/drills/GlassDiamondDrillBitSet.jpg",
+        picture: "https://images-na.ssl-images-amazon.com/images/I/71h5seLteUL._AC_SL1200_.jpg",
         price: 0
 
   },
   {
         category: "Drills",
         name: "Hammer Drill",
-        picture: "/ToolNextDoor/client/public/img/drills/HammerDrill01.jpg",
+        picture: "https://images-na.ssl-images-amazon.com/images/I/61Xn-Za8MIL._AC_SL1000_.jpg",
         price: 0
 
   },
   {
         category: "Drills",
         name: "Impact Drill",
-        picture: "/ToolNextDoor/client/public/img/drills/impactDrill.jpg",
+        picture: "https://m.media-amazon.com/images/I/61RK5VN6+cL._AC_SS350_.jpg",
         price: 0
 
   },
   {
         category: "Drills",
         name: "Rotary Hammer Drill",
-        picture: "/ToolNextDoor/client/public/img/drills/rotaryHammerDrill.jpg",
+        picture: "https://images.homedepot-static.com/productImages/a9f73181-f79c-42ca-a808-7771ecf87520/svn/milwaukee-rotary-hammers-5262-21-64_1000.jpg",
         price: 0
 
   },
   {
         category: "Drills",
         name: "Steel Drillbit Set",
-        picture: "/ToolNextDoor/client/public/img/drills/StellDrillBitSet.jpg",
+        picture: "https://images.homedepot-static.com/productImages/d58bb3f9-ff1c-46c1-9285-1e565b54ac0b/svn/drill-america-twist-drill-bits-poukfd5hex-64_1000.jpg",
         price: 0
 
   },
   {
       category: "Drills",
       name: "Titanium Drillbit Set",
-      picture: "/ToolNextDoor/client/public/img/drills/TitaniumBrillBitSet.jpg",
+      picture: "https://shop.harborfreight.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/6/4/64896_W3.jpg",
       price: 0
 
   },
   {
     category: "Lawncare",
     name: "Aerator",
-    picture: "/ToolNextDoor/client/public/img/lawncare/aerator.jpg",
+    picture: "https://cdnmedia.endeavorsuite.com/images/catalogs/19355/products/detail/23a48061-75f2-4621-8650-3a4e48d90c31.jpg",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Aerator Pro",
-    picture: "/ToolNextDoor/client/public/img/lawncare/aeratorPro.jpg",
+    picture: "https://www.classenturfcare.com/wp-content/uploads/2015/07/Classen-PRO-POWERSTEER-Aerator-TA-25DA-facing-right.jpg",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Auger",
-    picture: "/ToolNextDoor/client/public/img/lawncare/auger.jpg",
+    picture: "https://www.stihlusa.com/WebContent/Images/Product/3016/bt131.png?preset=Product.ProductDetails",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Backpack Leafblower",
-    picture: "/ToolNextDoor/client/public/img/lawncare/backpackLeafblower.jpg",
+    picture: "https://images-na.ssl-images-amazon.com/images/I/81bKoN9DKWL._AC_UX466_.jpg",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Cordless Chainsaw",
-    picture: "/ToolNextDoor/client/public/img/lawncare/chainsawCordless.jpg",
+    picture: "https://images-na.ssl-images-amazon.com/images/I/71IMn-tBTdL._AC_SY450_.jpg",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Gas Powered Chainsaw",
-    picture: "/ToolNextDoor/client/public/img/lawncare/chainsawGas.jpg",
+    picture: "https://images-na.ssl-images-amazon.com/images/I/61p0o1myoqL._AC_SY450_.jpg",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Chipper",
-    picture: "/ToolNextDoor/client/public/img/lawncare/chipper.jpg",
+    picture: "https://www.chippersdirect.com/products-image/500/PK0915_83313_.png",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Handheld Blower",
-    picture: "/ToolNextDoor/client/public/img/lawncare/handheldBlower.jpg",
+    picture: "https://www.stihlusa.com/WebContent/Images/Product/2875/bg50.png?preset=Product.ProductDetails",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Hedge Trimmer",
-    picture: "/ToolNextDoor/client/public/img/lawncare/hedgeTrimmer.jpg",
+    picture: "https://www.blackanddecker.com/NA/product/images/500x500x72/BEHTS125/BEHTS125_1.jpg",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Hydraulic Auger",
-    picture: "/ToolNextDoor/client/public/img/lawncare/hydraulicAuger.jpg",
+    picture: "https://www.northerntool.com/images/product/400x400/731/73182_400x400.jpg",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Hydraulic Tiller",
-    picture: "/ToolNextDoor/client/public/img/lawncare/hydraulicTiller.jpg",
+    picture: "https://cdn.shopify.com/s/files/1/0067/8549/9194/products/Tiller_-_Gardening_and_earth_moving_24inch_-_Honda_800x.jpg?v=1586545736",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Hydraulic Trenchers",
-    picture: "/ToolNextDoor/client/public/img/lawncare/hydraulicTrenchers.jpg",
+    picture: "https://www.redroo.com/content/product/full/HT1624_Hydraulic_Trencher-1014-117.jpg",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Large Lawn Mower",
-    picture: "/ToolNextDoor/client/public/img/lawncare/largerLawnmower.jpg",
+    picture: "https://www.mowersdirect.com/products-image/500/967-84-46-01_81511_1000.png",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Lawn Mower",
-    picture: "/ToolNextDoor/client/public/img/lawncare/lawnMower.jpg",
+    picture: "https://mobileimages.lowes.com/product/converted/043033/043033587575_09849343.jpg?size=pdhi",
     price: 0
 
 },
 {
     category: "Lawncare",
     name: "Power Rake",
-    picture: "/ToolNextDoor/client/public/img/lawncare/powerRake.jpg",
+    picture: "https://static.grainger.com/rp/s/is/image/Grainger/5NLJ1_AS01?$zmmain$",
     price: 0
 
 },
