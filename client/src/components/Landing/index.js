@@ -13,8 +13,6 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link as RouterLink } from 'react-router-dom';
-// import useSound from 'use-sound';
-// import sound from './sounds/grunt.mp3';
 
 function Copyright() {
   return (
@@ -61,13 +59,10 @@ const useStyles = makeStyles((theme) => ({
   },
  
 }));
-// const gruntbutton = () => {
-//     const [play] = useSound(sound);
-//   };
+
 export default function SignInSide() {
   const classes = useStyles();
-  
-  
+
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
@@ -113,13 +108,11 @@ export default function SignInSide() {
               label="Remember me"
             />
             <Button
-              // onClick={gruntbutton.play}
               type="submit"
               fullWidth
               variant="contained"
               color="primary"
               className={classes.submit}
-              
             >
               <RouterLink to="/home">
               Sign in
