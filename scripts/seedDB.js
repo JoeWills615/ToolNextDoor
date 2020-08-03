@@ -14,31 +14,31 @@ const ownerSeed = [
         firstName: "Tim",
         lastName: "Taylor",
         picture: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb7%2F38%2F13%2Fb738131ba6f19ad533674da28184f68b.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F339951471845660657%2F&tbnid=Do28J67A3fzAlM&vet=12ahUKEwilzZnpiPPqAhVET1MKHdWKCH8QMygHegUIARDUAQ..i&docid=pZyJsJwTw8xy8M&w=2009&h=3013&q=tim%20the%20tool%20man%20&ved=2ahUKEwilzZnpiPPqAhVET1MKHdWKCH8QMygHegUIARDUAQ",
-        tools: []  
+        tools: ["5f2791acbbf14021fc6fdafc", "5f2791acbbf14021fc6fdb01", "5f2791acbbf14021fc6fdb06", "5f2791acbbf14021fc6fdb0b", "5f2791acbbf14021fc6fdb10", "5f2791acbbf14021fc6fdb15", "5f2791acbbf14021fc6fdb19", "5f2791acbbf14021fc6fdb1f", "5f2791acbbf14021fc6fdb24", "5f2791acbbf14021fc6fdb29", "5f2791acbbf14021fc6fdb2e", "5f2791acbbf14021fc6fdb33" ]  
     },
     {
         firstName: "Al",
         lastName: "Borland",
         picture: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.looper.com%2F193669%2Fwhat-happened-to-al-from-home-improvement%2F&psig=AOvVaw3fdC6WaXyiii8mRCuNKdtP&ust=1596133053569000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOCUh5GJ8-oCFQAAAAAdAAAAABAD",
-        tools: [] 
+        tools: ["5f2791acbbf14021fc6fdafc", "5f2791acbbf14021fc6fdafd", "5f2791acbbf14021fc6fdb02", "5f2791acbbf14021fc6fdb07", "5f2791acbbf14021fc6fdb0c", "5f2791acbbf14021fc6fdb11", "5f2791acbbf14021fc6fdb16", "5f2791acbbf14021fc6fdb1b", "5f2791acbbf14021fc6fdb20", "5f2791acbbf14021fc6fdb25", "5f2791acbbf14021fc6fdb2a", "5f2791acbbf14021fc6fdb2f", "5f2791acbbf14021fc6fdb34" ] 
     },
     {
         firstName: "Wilson W.",
         lastName: "Wilson",
         picture: "https://2.bp.blogspot.com/-dIcsqsoHY6g/UN0UfY27KNI/AAAAAAAAURM/o6Sxvrh93dI/s1600/tumblr_lmq0olTKan1qlt51qo1_500.jpg",
-        tools: [] 
+        tools: ["5f2791acbbf14021fc6fdafe", "5f2791acbbf14021fc6fdb03", "5f2791acbbf14021fc6fdb08", "5f2791acbbf14021fc6fdb0d", "5f2791acbbf14021fc6fdb12", "5f2791acbbf14021fc6fdb17", "5f2791acbbf14021fc6fdb1c", "5f2791acbbf14021fc6fdb21", "5f2791acbbf14021fc6fdb26", "5f2791acbbf14021fc6fdb2b", "5f2791acbbf14021fc6fdb30", "5f2791acbbf14021fc6fdb23", "5f2791acbbf14021fc6fdb1f" ] 
     },
     {
         firstName: "Jill",
         lastName: "Taylor",
         picture: "https://i.pinimg.com/originals/52/3f/cd/523fcdf866cb627e121e37cd9ab892e8.jpg",
-        tools: [] 
+        tools: ["5f2791acbbf14021fc6fdaff", "5f2791acbbf14021fc6fdb04", "5f2791acbbf14021fc6fdb09", "5f2791acbbf14021fc6fdb0e", "5f2791acbbf14021fc6fdb13", "5f2791acbbf14021fc6fdb18", "5f2791acbbf14021fc6fdb1d", "5f2791acbbf14021fc6fdb22", "5f2791acbbf14021fc6fdb27", "5f2791acbbf14021fc6fdb2c", "5f2791acbbf14021fc6fdb31", "5f2791acbbf14021fc6fdafc", "5f2791acbbf14021fc6fdafe" ] 
     },
     {
         firstName: "Randy",
         lastName: "Taylor",
         picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpNDJ77ph_wehgVKCf7rWUoEPkUwhvweKqlQ&usqp=CAU",
-        tools: [] 
+        tools: ["5f2791acbbf14021fc6fdb00", "5f2791acbbf14021fc6fdb05", "5f2791acbbf14021fc6fdb0a", "5f2791acbbf14021fc6fdb0f", "5f2791acbbf14021fc6fdb14", "5f2791acbbf14021fc6fdb19", "5f2791acbbf14021fc6fdb1e", "5f2791acbbf14021fc6fdb23", "5f2791acbbf14021fc6fdb28", "5f2791acbbf14021fc6fdb2d", "5f2791acbbf14021fc6fdb07", "5f2791acbbf14021fc6fdb04", "5f2791acbbf14021fc6fdb03" ] 
     },
 
 ];
