@@ -82,22 +82,6 @@ export default function Album() {
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               Tool Next Door
             </Typography>
-             <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    Search Tools
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Post a Tool
-                  </Button>
-                </Grid>
-                <SearchBar/>           
-              </Grid>
-
-            </div>
           </Container>
         </div>
         <h1 style={{textAlign: "center"}}>{value.header}</h1>
