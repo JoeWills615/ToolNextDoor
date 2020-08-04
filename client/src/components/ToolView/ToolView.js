@@ -34,7 +34,7 @@ componentDidMount() {
       
       render(){ 
 const {name, category, owners, picture, price} = this.state.tool;
-const {tools} = this.state.owner;
+
 
            return(
              <Card>
