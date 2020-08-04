@@ -81,6 +81,7 @@ export default function Album() {
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               Tool Next Door
+            <SearchBar></SearchBar>
             </Typography>
           </Container>
         </div>
