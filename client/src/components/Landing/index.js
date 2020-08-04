@@ -14,7 +14,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Link as RouterLink } from 'react-router-dom';
 import grunt from './sounds/grunt.wav';
-import BackgroundHeader from "../../background/toolNextDoorBackground1.png"
+import BackgroundHeader from "../../background/tools.png"
 
 
 const timAllen = new Audio(grunt); 
@@ -27,7 +27,7 @@ const BackgroundHead = {
   backgroundImage: 'url('+ BackgroundHeader+')',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  height: '100vh',
+  // height: '100vh',
 
   }
 
@@ -63,6 +63,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    backgroundColor: 'white',
   },
   avatar: {
     margin: theme.spacing(1),
@@ -82,13 +83,13 @@ export default function SignIn() {
 
   return (
     <div style={BackgroundHead}>
-    <Container component="main" maxWidth="xs">
+    <Container component="main" maxWidth="xs" background='black'>
       <CssBaseline />
       <div className={classes.paper}>
-      <Avatar className={classes.orange}>
+      {/* <Avatar className={classes.orange}>
             TND
-        </Avatar>
-        <Typography component="div" align="center" color="secondary">
+        </Avatar> */}
+        <Typography component="div" align="center" color="dark">
           <h1>Tool Next Door</h1>
           <h3>Lease the tools you need to get the job done</h3>
           <h3>or</h3>
@@ -118,7 +119,7 @@ export default function SignIn() {
             autoComplete="current-password"
           />
           <FormControlLabel
-            control={<Checkbox value="remember" color="primary" />}
+            control={<Checkbox value="remember" color="dark" />}
             label="Remember me"
           />
           <Button
@@ -126,7 +127,7 @@ export default function SignIn() {
             type="submit"
             fullWidth
             variant="contained"
-            color="primary"
+            color="dark"
             className={classes.submit}
           >
               <RouterLink to="/about">
