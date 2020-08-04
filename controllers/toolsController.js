@@ -15,7 +15,7 @@ module.exports = {
         .then(tool => res.json(tool))
         .catch(err => res.status(422).json(err));
     },
-    findByName: (req, res) => {
+    findByName: (req, res) => { 
       db.Tool
         .find({category: req.params.id})
         .then(tool => res.json(tool))
@@ -23,7 +23,7 @@ module.exports = {
     },
     create: (req, res) => {
       db.Tool
-        .create(req.body)
+        .create(req.body.newTool)
         .then(tool => res.json(tool))
         .catch(err => res.status(422).json(err));
     },

@@ -5,11 +5,11 @@ import Landing from './components/Landing';
 import Search from './components/Search';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from './components/NavBar';
-import ToolView from './components/ToolView/ToolView';
+import ToolView from './components/ToolView';
 import { Provider } from './globalContext';
 import About from './components/About';
 import Post from './components/Post';
-
+import Cart from './components/Cart'
 function App() {
   return (
 <Provider>
@@ -32,6 +32,9 @@ function App() {
        <Route exact path="/tools/:id" component={ToolView}>
          <ToolView />
        </Route>
+       <Route exact path="/cart">
+         <Cart /> 
+      </Route>
      </Switch>
   </div>
 </Router>

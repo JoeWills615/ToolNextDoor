@@ -17,14 +17,14 @@ class SearchBar extends Component {
   //Searches DB by params in tools controller, seperate from findByID
      searchTools = (dispatch, e) => {
         e.preventDefault();
-
-        axios.get(`/search/${this.state.searchTerms}`)
+        const search = this.state.searchTerms.charAt(0).toUpperCase() + this.state.searchTerms.slice(1)
+        console.log(search);
+        axios.get(`/search/${search}`)
         .then(res => {
-         console.log(res);
-        dispatch({
-            type: 'SEARCH_TOOLS',
-            payload: res.data
-        })
+            dispatch({
+                type: 'SEARCH_TOOLS',
+                payload: res.data
+            })
         }) 
         .catch(err => console.log(err))
     }
