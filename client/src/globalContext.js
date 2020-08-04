@@ -22,6 +22,21 @@ export class Provider extends Component {
         tool_list: [],
         owner_list: [],
         header: "All Tools",
+        cart: [    {
+            name: 'Hammer',
+            price: 3,
+            id: 2,
+        },
+        {
+            name: 'Drill',
+            price: 10,
+            id: 23,
+        },
+        {
+            name: 'Hammer',
+            price: 5,
+            id: 24,
+        }],
         dispatch: action => this.setState(state => reducer(state, action))
     };
 

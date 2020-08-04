@@ -26,9 +26,9 @@ const ownerSchema = new mongoose.Schema({
 
 const toolSchema = new mongoose.Schema({
     owners: [{
-        type: Schema.Types.ObjectId,
+        type: Schema.Types.Mixed,
         ref: "Owner",
-        default: []
+        //default: []
     }],
     category: {
         type: String,
