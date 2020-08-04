@@ -75,14 +75,6 @@ export default function Album() {
      return( 
     <React.Fragment>
       <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <CameraIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
-           Tool Next Door
-          </Typography>
-        </Toolbar>
-      </AppBar>
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
@@ -130,7 +122,7 @@ export default function Album() {
                       {tool.name}
                     </Typography>
                     <Typography>
-                      Price: ${tool.price} per day || {tool.price * 4.5} 
+                      Price: ${tool.price} per day || {tool.price * 4.5} per week
                      <br/>
                       Category: {tool.category}
                     </Typography>
@@ -140,7 +132,7 @@ export default function Album() {
                      <Link href={`/tools/${tool._id}`}> View Info </Link> 
                     </Button>
                     <Button size="small" color="primary">
-                      Buy
+                      Rent
                     </Button>
                   </CardActions>
                 </Card>
