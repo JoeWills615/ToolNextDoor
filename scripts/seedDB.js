@@ -14,31 +14,31 @@ const ownerSeed = [
         firstName: "Tim",
         lastName: "Taylor",
         picture: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb7%2F38%2F13%2Fb738131ba6f19ad533674da28184f68b.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F339951471845660657%2F&tbnid=Do28J67A3fzAlM&vet=12ahUKEwilzZnpiPPqAhVET1MKHdWKCH8QMygHegUIARDUAQ..i&docid=pZyJsJwTw8xy8M&w=2009&h=3013&q=tim%20the%20tool%20man%20&ved=2ahUKEwilzZnpiPPqAhVET1MKHdWKCH8QMygHegUIARDUAQ",
-        tools: ["Breaker Bar", "5f2791acbbf14021fc6fdb01", "5f2791acbbf14021fc6fdb06", "5f2791acbbf14021fc6fdb0b", "5f2791acbbf14021fc6fdb10", "5f2791acbbf14021fc6fdb15", "5f2791acbbf14021fc6fdb19", "5f2791acbbf14021fc6fdb1f", "5f2791acbbf14021fc6fdb24", "5f2791acbbf14021fc6fdb29", "5f2791acbbf14021fc6fdb2e", "5f2791acbbf14021fc6fdb33" ]  
+        tools: ["Breaker Bar", "OBD2 Scanner", "Cordless Screwdriver", "Impact Drill", "Aerator Pro", "Chipper", "Hydraulic Trenchers", "Wheelbarrow", "Nail Gun", "Pressure Washer (3000 PSI)", "Hand Sander", "Table Saw" ]  
     },
     {
         firstName: "Al",
         lastName: "Borland",
         picture: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.looper.com%2F193669%2Fwhat-happened-to-al-from-home-improvement%2F&psig=AOvVaw3fdC6WaXyiii8mRCuNKdtP&ust=1596133053569000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOCUh5GJ8-oCFQAAAAAdAAAAABAD",
-        tools: ["Dead Blow Hammer", "5f2791acbbf14021fc6fdafd", "5f2791acbbf14021fc6fdb02", "5f2791acbbf14021fc6fdb07", "5f2791acbbf14021fc6fdb0c", "5f2791acbbf14021fc6fdb11", "5f2791acbbf14021fc6fdb16", "5f2791acbbf14021fc6fdb1b", "5f2791acbbf14021fc6fdb20", "5f2791acbbf14021fc6fdb25", "5f2791acbbf14021fc6fdb2a", "5f2791acbbf14021fc6fdb2f", "5f2791acbbf14021fc6fdb34" ] 
+        tools: ["Dead Blow Hammer", "Oil Filter Pliers", "Cordless Screwdriver", "Rotary Hammer Drill", "Auger", "Handheld Blower", "Large Lawn Mower", "Air Compressor", "Roofing Nailer", "Pressure Washer (3500 PSI)", "Skill Saw", "Table Saw" ] 
     },
     {
         firstName: "Wilson W.",
         lastName: "Wilson",
         picture: "https://2.bp.blogspot.com/-dIcsqsoHY6g/UN0UfY27KNI/AAAAAAAAURM/o6Sxvrh93dI/s1600/tumblr_lmq0olTKan1qlt51qo1_500.jpg",
-        tools: ["5f2791acbbf14021fc6fdafe", "5f2791acbbf14021fc6fdb03", "5f2791acbbf14021fc6fdb08", "5f2791acbbf14021fc6fdb0d", "5f2791acbbf14021fc6fdb12", "5f2791acbbf14021fc6fdb17", "5f2791acbbf14021fc6fdb1c", "5f2791acbbf14021fc6fdb21", "5f2791acbbf14021fc6fdb26", "5f2791acbbf14021fc6fdb2b", "5f2791acbbf14021fc6fdb30", "5f2791acbbf14021fc6fdb23", "5f2791acbbf14021fc6fdb1f" ] 
+        tools: ["Floor Jack", "Torque Wrench", "Drillbit Set", "Steel Drillbit Set", "Backpack Leafblower", "Hedge Trimmer", "Lawn Mower", "Bolt Cutters", "Shop Vaccum", "Belt and Disc Sander", "Skill Saw" ] 
     },
     {
         firstName: "Jill",
         lastName: "Taylor",
         picture: "https://i.pinimg.com/originals/52/3f/cd/523fcdf866cb627e121e37cd9ab892e8.jpg",
-        tools: ["5f2791acbbf14021fc6fdaff", "5f2791acbbf14021fc6fdb04", "5f2791acbbf14021fc6fdb09", "5f2791acbbf14021fc6fdb0e", "5f2791acbbf14021fc6fdb13", "5f2791acbbf14021fc6fdb18", "5f2791acbbf14021fc6fdb1d", "5f2791acbbf14021fc6fdb22", "5f2791acbbf14021fc6fdb27", "5f2791acbbf14021fc6fdb2c", "5f2791acbbf14021fc6fdb31", "5f2791acbbf14021fc6fdafc", "5f2791acbbf14021fc6fdafe" ] 
+        tools: ["Jack Stands", "Vise Grips", "Glass Diamond Drillbit Set", "Titanium Drillbit Set", "Cordless Chainsaw", "Hydraulic Auger", "Power Rake", "Grinder", "Telescopic Ladder", "Dewalt Hand Sander", "Table Saw" ] 
     },
     {
         firstName: "Randy",
         lastName: "Taylor",
         picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpNDJ77ph_wehgVKCf7rWUoEPkUwhvweKqlQ&usqp=CAU",
-        tools: ["5f2791acbbf14021fc6fdb00", "5f2791acbbf14021fc6fdb05", "5f2791acbbf14021fc6fdb0a", "5f2791acbbf14021fc6fdb0f", "5f2791acbbf14021fc6fdb14", "5f2791acbbf14021fc6fdb19", "5f2791acbbf14021fc6fdb1e", "5f2791acbbf14021fc6fdb23", "5f2791acbbf14021fc6fdb28", "5f2791acbbf14021fc6fdb2d", "5f2791acbbf14021fc6fdb07", "5f2791acbbf14021fc6fdb04", "5f2791acbbf14021fc6fdb03" ] 
+        tools: ["Multimeter", "Concrete Wet Drill", "Hammer Drill", "Aerator", "Gas Powered Chainsaw", "Hydraulic Tiller", "Pruner", "Leveler", "Pressure Washer (2000 PSI)", "Dry-wall Sander", "Table Saw" ] 
     },
 
 ];
@@ -85,7 +85,7 @@ db.Owner.remove({})
     {
         category: "Automotive",
         name: "Jack Stands",
-        owners: "",
+        owners: "Jill Taylor",
         picture: "https://images-na.ssl-images-amazon.com/images/I/71FaUHfDdFL._AC_SY355_.jpg",
         price: 3
 
@@ -93,7 +93,7 @@ db.Owner.remove({})
   {
         category: "Automotive",
         name: "Multimeter",
-        owners: "",
+        owners: "Randy Taylor",
         picture: "https://images-na.ssl-images-amazon.com/images/I/41AtjGn2E8L.jpg",
         price: 5
 
@@ -461,7 +461,7 @@ db.Owner.remove({})
 {
   category: "Sanders",
   name: "Hand Sander",
-  owners: ["Tim Taylor", "Wilson W. Wilson"],
+  owners: "Tim Taylor", 
   picture: "https://images.homedepot-static.com/productImages/71a2e452-7fa4-4680-8c03-45934ec1f6a4/svn/wal-board-tools-manual-hand-sanders-34-002-64_1000.jpg",
   price: 5
 
