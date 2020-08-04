@@ -11,6 +11,7 @@ import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
 import BuildIcon from '@material-ui/icons/Build';
 
+
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -28,7 +29,7 @@ export default function ButtonAppBar() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="static" color='dark'>
                 <Toolbar>
                     <BuildIcon edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
