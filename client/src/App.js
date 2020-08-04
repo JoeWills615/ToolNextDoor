@@ -18,7 +18,7 @@ function App() {
      <NavBar color='dark' />
      <Switch>
        <Route exact path="/">
-         <Landing /> 
+         <Landing className="toolBorder" /> 
       </Route>
        <Route exact path="/home">
          <Home />

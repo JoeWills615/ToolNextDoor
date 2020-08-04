@@ -39,13 +39,13 @@ const useStyles = makeStyles((theme) => ({
         height: '100vh',
     },
     image: {
-    backgroundImage: 'url(https://countrymusicprep.files.wordpress.com/2020/08/toolcircle.png)',
-    backgroundRepeat: 'no-repeat',
+    background: 'url(https://countrymusicprep.files.wordpress.com/2020/08/toolcircle.png) no-repeat center center fixed',
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
     backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    
+    height:'100%',
+    width: '100%',
+    objectFit: 'cover'
   },  
   
   paper: {
@@ -65,13 +65,16 @@ const useStyles = makeStyles((theme) => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+
+  
 }));
 
 export default function SignIn() {
   const classes = useStyles();
 
   return (
-    <Container component="main" maxWidth="xs">
+    <Container component="main" maxWidth="m" className={classes.image}>
+    <Container component="div" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
       <Avatar className={classes.orange}>
@@ -139,6 +142,7 @@ export default function SignIn() {
       <Box mt={8}>
         <Copyright />
       </Box>
+      </Container>
     </Container>
   );
 }
