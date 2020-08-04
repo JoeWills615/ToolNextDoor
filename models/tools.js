@@ -46,6 +46,11 @@ const toolSchema = new mongoose.Schema({
     price: {
         type: Number,
         required: true
+    },
+    owners: {
+        type: String,
+        required: true,
+        default: ""
     }
 });
 

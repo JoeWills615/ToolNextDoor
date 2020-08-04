@@ -129,7 +129,7 @@ export default function SignIn() {
             color="primary"
             className={classes.submit}
           >
-              <RouterLink to="/home">
+              <RouterLink to="/about">
             Sign In
             </RouterLink>
           </Button>
