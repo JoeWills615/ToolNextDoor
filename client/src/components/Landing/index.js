@@ -14,12 +14,22 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Link as RouterLink } from 'react-router-dom';
 import grunt from './sounds/grunt.wav';
+import BackgroundHeader from "../../background/toolNextDoorBackground1.png"
+
 
 const timAllen = new Audio(grunt); 
 
 const playSound = audioFile => {
   audioFile.play();
 }
+
+const BackgroundHead = {
+  backgroundImage: 'url('+ BackgroundHeader+')',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  height: '100vh',
+
+  }
 
 function Copyright() {
   return (
@@ -39,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
         height: '100vh',
     },
     image: {
-    backgroundImage: 'url(https://countrymusicprep.files.wordpress.com/2020/08/toolcircle.png)',
+    backgroundImage: 'url(https://countrymusicprep.files.wordpress.com/2020/08/loginimage.png)',
     backgroundRepeat: 'no-repeat',
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
@@ -71,13 +81,14 @@ export default function SignIn() {
   const classes = useStyles();
 
   return (
+    <div style={BackgroundHead}>
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
       <Avatar className={classes.orange}>
             TND
         </Avatar>
-        <Typography component="div" align="center">
+        <Typography component="div" align="center" color="secondary">
           <h1>Tool Next Door</h1>
           <h3>Lease the tools you need to get the job done</h3>
           <h3>or</h3>
@@ -140,5 +151,6 @@ export default function SignIn() {
         <Copyright />
       </Box>
     </Container>
+    </div>
   );
 }
