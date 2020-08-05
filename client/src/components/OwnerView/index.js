@@ -1,139 +1,79 @@
-import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
+import React, { Component } from 'react';
 import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
+import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
+import axios from 'axios'
+import { Consumer } from '../../globalContext'
 import Link from '@material-ui/core/Link';
-import SearchBar from '../SearchBar/SearchBar';
-//Bring in GlobalContext with our DB info
-import {Consumer} from '../../globalContext'
 
 
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
+class OwnerView extends Component {
+
+  state = {
+    tool: {},
+    owner: {}
+  }
+
+  url = (window.location.pathname.replace("/owner/", ""))
+
+  componentDidMount() {
+    axios
+      .get(`/api/owner/${this.url}`)
+      .then(res => {
+        console.log(res.data)
+        this.setState({ owner: res.data })
+      })
+      .catch(err => console.log(err))
+  }
+
+  render() {
+    const { fullName, picture, tools } = this.state.owner
+    console.log(this.state.owner);
+    return (
+      <Card>
+        <CardActionArea>
+          <CardMedia
+            image="/static/images/cards/contemplative-reptile.jpg"
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {this.state.owner.fullName}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              <img src={picture} alt={fullName} style={{ maxWidth: "400px" }} />
+              <br />
+            {/* Price: ${price} per day || ${price * 4.5} per week
+            <br />
+            Category: {category}
+              <br />
+            Owned By: {owners}
+              <br /> */}
+
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Rent
+        </Button>
+          <Button size="small" color="primary">
+            {/* <Link href={`/owners/${owners}`}> View All Tools by This Owner </Link> */}
+          </Button>
+        </CardActions>
+      </Card>
+    )
+
+
+
+  }
+
+
 }
 
-const useStyles = makeStyles((theme) => ({
-  icon: {
-    marginRight: theme.spacing(2),
-  },
-  heroContent: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6),
-  },
-  heroButtons: {
-    marginTop: theme.spacing(4),
-  },
-  cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
-  },
-  card: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  cardMedia: {
-    paddingTop: '56.25%', // 16:9
-  },
-  cardContent: {
-    flexGrow: 1,
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
-  },
-}));
-
-
-export default function Album() {
-  const classes = useStyles();
-
-  return (
-   <Consumer>
-       {value => {
-
-     return( 
-    <React.Fragment>
-      <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <CameraIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
-           Tool Next Door
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <main>
-        <h1 style={{textAlign: "center"}}>{value.header}</h1>
-        <Container className={classes.cardGrid} maxWidth="md">
-          {/* End hero unit */}
-          <Grid container spacing={4}>
-            {owner.tools.map((tool) => (
-              <Grid item key={tool} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image={tool.picture}
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      {tool.name}
-                    </Typography>
-                    <Typography>
-                      Price: ${tool.price} per day || {tool.price * 4.5} 
-                     <br/>
-                      Category: {tool.category}
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                     <Link href={`/tools/${tool._id}`}> View Info </Link> 
-                    </Button>
-                    <Button size="small" color="primary">
-                      Buy
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-        <Copyright />
-      </footer>
-      {/* End footer */}
-    </React.Fragment>  
-    ) 
-    }}
-     </Consumer> 
-  );
-}
+export default OwnerView

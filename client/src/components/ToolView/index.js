@@ -55,7 +55,7 @@ class ToolView extends Component {
             Owned By: {owners}
               <br />
 
-            </Typography>
+            </Typography>z
           </CardContent>
         </CardActionArea>
         <CardActions>
