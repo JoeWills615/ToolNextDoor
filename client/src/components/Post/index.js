@@ -3,8 +3,6 @@ import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import Button from '@material-ui/core/Button';
-import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
 import axios from 'axios';
 import { Redirect } from 'react-router';
 import Typography from '@material-ui/core/Typography';

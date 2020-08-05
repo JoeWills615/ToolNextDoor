@@ -65,10 +65,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     backgroundColor: 'white',
   },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
   form: {
     width: '65%', // Fix IE 11 issue.
     marginTop: theme.spacing(1),

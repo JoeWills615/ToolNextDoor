@@ -29,23 +29,6 @@ class SearchBar extends Component {
         .catch(err => console.log(err))
     }
 
-    // BRINGS ALL RESULTS FROM API THEN FILTER
-/*     searchTools = (e) => {
-        e.preventDefault();
-        axios.get(`/api/tools`)
-        .then(res => {
-            console.log(res);
-           let results = res.data.filter(
-               (tool) => {
-                   return tool.category.toLowerCase().indexOf(this.state.searchTerms.toLowerCase()) !== -1
-               }
-           ) 
-        this.setState({tool_list: results})
-        console.log(results);
-        }) 
-        .catch(err => console.log(err))
-    } */
-
     render() {
 
         return (
@@ -68,6 +51,7 @@ class SearchBar extends Component {
                                 name="searchTerms"
                                 value={this.state.searchTerms}
                                 onChange={this.onChange}
+                                size='sm'
                                 >
                                 
                                 </input>

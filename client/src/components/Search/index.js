@@ -14,7 +14,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import SearchBar from '../SearchBar/SearchBar';
-//Bring in GlobalContext with our DB info
 import {Consumer} from '../../globalContext'
 
 
