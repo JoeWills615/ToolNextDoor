@@ -45,7 +45,7 @@ class OwnerView extends Component {
               {this.state.owner.fullName}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              <img src={'picture'} alt={fullName} style={{ maxWidth: "400px" }} />
+              <img src={picture} alt={fullName} style={{ maxWidth: "400px" }} />
               <br />
             {tools.map(tool => {
              return <h1>{tool}</h1>
