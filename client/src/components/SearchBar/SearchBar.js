@@ -52,9 +52,11 @@ class SearchBar extends Component {
                                 value={this.state.searchTerms}
                                 onChange={this.onChange}
                                 size='sm'
+                                style={{maxHeight: '50%', fontSize: '30px', marginWidth: '80%'}}
                                 >
                                 
                                 </input>
+                                <br />
                                 <Button type='submit' variant="contained" color="secondary">
                                     Get Tools
                                 </Button>
