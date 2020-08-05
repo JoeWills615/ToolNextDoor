@@ -14,7 +14,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import SearchBar from '../SearchBar/SearchBar';
-//Bring in GlobalContext with our DB info
 import {Consumer} from '../../globalContext'
 
 
@@ -108,9 +107,10 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
-                     <Link href={`/tools/${tool._id}`}> View Info </Link> 
+                    <Button size="small" color="secondary">
+                     <Link color='secondary' href={`/tools/${tool._id}`}> View Info </Link> 
                     </Button>
+
                     <Button size="small" color="primary">
                        <Link href={`/cart/${tool.price}`}>Rent This Tool! </Link> 
                     </Button>

@@ -35,8 +35,8 @@ function App() {
        <Route exact path="/tools/:id" component={ToolView}>
          <ToolView />
        </Route>
-       <Route exact path="/owner/:id" component={OwnerView}>
-         <ToolView />
+       <Route exact path="/owners/:id" >
+         <OwnerView />
        </Route>
        <Route exact path="/cart/:id">
         {/*  <Cart />  */}

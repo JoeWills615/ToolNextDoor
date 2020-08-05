@@ -14,10 +14,7 @@ import Link from '@material-ui/core/Link';
 
 class ToolView extends Component {
 
-  state = {
-    tool: {},
-    owner: {}
-  }
+  state = { tool: {} }
 
   url = (window.location.pathname.replace("/tools/", ""))
 
@@ -25,7 +22,6 @@ class ToolView extends Component {
     axios
       .get(`/api/tools/${this.url}`)
       .then(res => {
-        console.log(res.data)
         this.setState({ tool: res.data })
       })
       .catch(err => console.log(err))
@@ -33,7 +29,7 @@ class ToolView extends Component {
 
   render() {
     const { name, category, owners, picture, price } = this.state.tool
-    console.log(this.state.tool);
+  
     return (
       <Card>
         <CardActionArea>
@@ -55,7 +51,7 @@ class ToolView extends Component {
             Owned By: {owners}
               <br />
 
-            </Typography>z
+            </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>

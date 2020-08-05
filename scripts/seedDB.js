@@ -4,40 +4,37 @@ const db = require("../models");
 
 
 
-mongoose.connect(
-  process.env.MONGODB_URI ||
-  "mongodb://localhost/tool_next_door"
-);
+mongoose.connect("mongodb://heroku_l38320jp:1s9nb8vudel05urj8808cdd71g@ds113282.mlab.com:13282/heroku_l38320jp");
 
 const ownerSeed = [
     {
         fullName: "Tim Taylor",
-        picture: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb7%2F38%2F13%2Fb738131ba6f19ad533674da28184f68b.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F339951471845660657%2F&tbnid=Do28J67A3fzAlM&vet=12ahUKEwilzZnpiPPqAhVET1MKHdWKCH8QMygHegUIARDUAQ..i&docid=pZyJsJwTw8xy8M&w=2009&h=3013&q=tim%20the%20tool%20man%20&ved=2ahUKEwilzZnpiPPqAhVET1MKHdWKCH8QMygHegUIARDUAQ",
+        picture: "https://i.pinimg.com/originals/b7/38/13/b738131ba6f19ad533674da28184f68b.jpg",
         tools: ["Breaker Bar", "OBD2 Scanner", "Cordless Screwdriver", "Impact Drill", "Aerator Pro", "Chipper", "Hydraulic Trenchers", "Wheelbarrow", "Nail Gun", "Pressure Washer (3000 PSI)", "Hand Sander", "Table Saw" ]  
     },
     {
         fullName: "Al Borland",
-        picture: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.looper.com%2F193669%2Fwhat-happened-to-al-from-home-improvement%2F&psig=AOvVaw3fdC6WaXyiii8mRCuNKdtP&ust=1596133053569000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOCUh5GJ8-oCFQAAAAAdAAAAABAD",
+        picture: "https://img1.looper.com/img/gallery/what-happened-to-al-from-home-improvement/intro-1583935273.jpg",
         tools: ["Dead Blow Hammer", "Oil Filter Pliers", "Cordless Screwdriver", "Rotary Hammer Drill", "Auger", "Handheld Blower", "Large Lawn Mower", "Air Compressor", "Roofing Nailer", "Pressure Washer (3500 PSI)", "Skill Saw", "Table Saw" ] 
     },
     {
         fullName: "Wilson W. Wilson",
-        picture: "https://2.bp.blogspot.com/-dIcsqsoHY6g/UN0UfY27KNI/AAAAAAAAURM/o6Sxvrh93dI/s1600/tumblr_lmq0olTKan1qlt51qo1_500.jpg",
+        picture: "https://pbs.twimg.com/media/ChfbfpIUUAMPBH1.jpg",
         tools: ["Floor Jack", "Torque Wrench", "Drillbit Set", "Steel Drillbit Set", "Backpack Leafblower", "Hedge Trimmer", "Lawn Mower", "Bolt Cutters", "Shop Vaccum", "Belt and Disc Sander", "Skill Saw" ] 
     },
     {
         fullName: "Jill Taylor",
-        picture: "https://i.pinimg.com/originals/52/3f/cd/523fcdf866cb627e121e37cd9ab892e8.jpg",
+        picture: "https://vignette.wikia.nocookie.net/homeimprovement/images/9/91/Jill.jpg/revision/latest?cb=20160306151603",
         tools: ["Jack Stands", "Vise Grips", "Glass Diamond Drillbit Set", "Titanium Drillbit Set", "Cordless Chainsaw", "Hydraulic Auger", "Power Rake", "Grinder", "Telescopic Ladder", "Dewalt Hand Sander", "Table Saw" ] 
     },
     {
         fullName: "Randy Taylor",
-        picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpNDJ77ph_wehgVKCf7rWUoEPkUwhvweKqlQ&usqp=CAU",
+        picture: "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2019/07/931/524/Jonathan-Taylor-Thomas-GettyImages-76024159.jpg?v",
         tools: ["Multimeter", "Concrete Wet Drill", "Hammer Drill", "Aerator", "Gas Powered Chainsaw", "Hydraulic Tiller", "Pruner", "Leveler", "Pressure Washer (2000 PSI)", "Dry-wall Sander", "Table Saw" ] 
     },
 
 ];
-console.log(db);
+
 db.Owner.remove({})
   .then(() => db.Owner.collection.insertMany(ownerSeed))
   .then(data => {

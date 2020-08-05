@@ -14,26 +14,25 @@ import Link from '@material-ui/core/Link';
 
 class OwnerView extends Component {
 
-  state = {
-    tool: {},
-    owner: {}
-  }
+  state = { owner: {} }
 
-  url = (window.location.pathname.replace("/owner/", ""))
+  url = (window.location.pathname.replace("/owners/", ""))
 
   componentDidMount() {
     axios
-      .get(`/api/owner/${this.url}`)
+      .get(`/api/owners/${this.url}`)
       .then(res => {
-        console.log(res.data)
-        this.setState({ owner: res.data })
+        this.setState({ owner: res.data[0] })
       })
       .catch(err => console.log(err))
   }
 
   render() {
     const { fullName, picture, tools } = this.state.owner
-    console.log(this.state.owner);
+    console.log(picture);
+    if (!picture) {
+      return <h1>Loading...</h1>
+    }
     return (
       <Card>
         <CardActionArea>
@@ -48,32 +47,17 @@ class OwnerView extends Component {
             <Typography variant="body2" color="textSecondary" component="p">
               <img src={picture} alt={fullName} style={{ maxWidth: "400px" }} />
               <br />
-            {/* Price: ${price} per day || ${price * 4.5} per week
-            <br />
-            Category: {category}
-              <br />
-            Owned By: {owners}
-              <br /> */}
+            {tools.map(tool => {
+             return <h1>{tool}</h1>
+            }
+            )}
 
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Rent
-        </Button>
-          <Button size="small" color="primary">
-            {/* <Link href={`/owners/${owners}`}> View All Tools by This Owner </Link> */}
-          </Button>
-        </CardActions>
       </Card>
     )
-
-
-
   }
-
-
 }
 
 export default OwnerView

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Consumer} from '../../globalContext';
-
+import { Consumer } from '../../globalContext';
+import Button from '@material-ui/core/Button';
 
 
 class SearchBar extends Component {
@@ -29,23 +29,6 @@ class SearchBar extends Component {
         .catch(err => console.log(err))
     }
 
-    // BRINGS ALL RESULTS FROM API THEN FILTER
-/*     searchTools = (e) => {
-        e.preventDefault();
-        axios.get(`/api/tools`)
-        .then(res => {
-            console.log(res);
-           let results = res.data.filter(
-               (tool) => {
-                   return tool.category.toLowerCase().indexOf(this.state.searchTerms.toLowerCase()) !== -1
-               }
-           ) 
-        this.setState({tool_list: results})
-        console.log(results);
-        }) 
-        .catch(err => console.log(err))
-    } */
-
     render() {
 
         return (
@@ -56,8 +39,10 @@ class SearchBar extends Component {
                     return (
                         // Can be changed to navbar category search to ensure results?
                         <div>
+                            
+
                             <h1> Search for Tools! </h1>
-                            <p> Enter Category of Tool </p>
+                            {/* <p> Enter Category of Tool </p> */}
 
                             <form onSubmit={this.searchTools.bind(this, dispatch)}>
                                 <input 
@@ -66,8 +51,14 @@ class SearchBar extends Component {
                                 name="searchTerms"
                                 value={this.state.searchTerms}
                                 onChange={this.onChange}
-                                ></input>
-                                <button type='submit' style={{padding: "10px"}}>Get Tools!</button>
+                                size='sm'
+                                >
+                                
+                                </input>
+                                <Button type='submit' variant="contained" color="secondary">
+                                    Get Tools
+                                </Button>
+                                {/* <button type='submit' style={{padding: "10px"}}>Get Tools!</button> */}
                             </form>
                         </div>
                     );

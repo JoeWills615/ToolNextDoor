@@ -59,18 +59,14 @@ const useStyles = makeStyles((theme) => ({
   },  
   
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: 'white',
   },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
   form: {
-    width: '100%', // Fix IE 11 issue.
+    width: '65%', // Fix IE 11 issue.
     marginTop: theme.spacing(1),
   },
   submit: {
@@ -127,7 +123,7 @@ export default function SignIn() {
             type="submit"
             fullWidth
             variant="contained"
-            color="dark"
+            color="Secondary"
             className={classes.submit}
           >
               <RouterLink to="/about">
@@ -136,12 +132,12 @@ export default function SignIn() {
           </Button>
           <Grid container>
             <Grid item xs>
-              <Link href="#" variant="body2">
+              <Link href="#" variant="body2" color="secondary">
                 Forgot password?
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link href="#" variant="body2" color="secondary">
                 {"Don't have an account? Sign Up"}
               </Link>
             </Grid>

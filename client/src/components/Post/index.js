@@ -3,12 +3,12 @@ import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import Button from '@material-ui/core/Button';
-import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
 import axios from 'axios';
-import { Redirect } from 'react-router'
+import { Redirect } from 'react-router';
+import Typography from '@material-ui/core/Typography';
+import Link from '@material-ui/core/Link';
 
-/* const useStyles = makeStyles((theme) => ({
+ const useStyles = makeStyles((theme) => ({
     root: {
         '& .MuiTextField-root': {
             margin: theme.spacing(1),
@@ -18,7 +18,24 @@ import { Redirect } from 'react-router'
     button: {
         margin: theme.spacing(1),
     },
-})); */
+    footer: {
+        backgroundColor: theme.palette.background.paper,
+        padding: theme.spacing(6),
+    },
+}));
+
+function Copyright() {
+    return (
+      <Typography variant="body2" color="textSecondary" align="center">
+        {'Copyright © '}
+        <Link color="inherit" href="https://material-ui.com/">
+          Chris/Alex/Lex/Joe
+        </Link>{' '}
+        {new Date().getFullYear()}
+        {'.'}
+      </Typography>
+    );
+  }
 
 
 export default class PostPage extends Component {
@@ -56,16 +73,18 @@ export default class PostPage extends Component {
             return <Redirect to={'/search'} />;
         }
         return (
-            // <div>
-            //     <p>
-            //         This is just a Test
-            //     </p>
-            // </div>
+            <div>
             <form style={{
                 margin: 'theme.spacing(1)',
-                width: '200'
+                width: '200',
+                align: 'center'
             }} noValidate autoComplete="off" onSubmit={this.onSubmit}>
-                <div>
+                <div align='center'>
+                    <Typography>
+                    <h1>Tool Next Door</h1>
+                    <h3>Rent your collection of tools to earn extra cash</h3>
+                    <h3>Place Specialty tools you rarely use back to work!</h3>
+                    </Typography>
                     <TextField
                         type='text'
                         label="Category"
@@ -77,7 +96,7 @@ export default class PostPage extends Component {
                         onChange={this.onChange}
                     />
                 </div>
-                <div>
+                <div align='center'>
                     <TextField
                         type='text'
                         label="Name"
@@ -90,7 +109,7 @@ export default class PostPage extends Component {
 
                     />
                 </div>
-                <div>
+                <div align='center'>
                     <TextField
                         type='text'
                         label="Price"
@@ -103,35 +122,18 @@ export default class PostPage extends Component {
 
                     />
                 </div>
-                {/*  <label htmlFor="upload-photo">
-                <input
-                    style={{ display: 'none' }}
-                    id="upload-photo"
-                    name="upload-photo"
-                    type="file"
-                />
-
-                <Fab
-                    color="dark"
-                    size="small"
-                    component="span"
-                    aria-label="add"
-                    variant="extended"
-                >
-                    <AddIcon /> Upload photo
-                </Fab>
-            </label>
-            <div>
+                <div align='center'>
                 <Button
                     variant="contained"
-                    color="default"
-                    className={classes.button}
-                    startIcon={<CloudUploadIcon />}>
+                    color="secondary"
+                    startIcon={<CloudUploadIcon />}
+                    >
                     Upload
                 </Button>
-            </div> */}
-                <input type='submit' value='Submit' />
+                </div>
+
             </form>
+            </div>
         );
     }
 
