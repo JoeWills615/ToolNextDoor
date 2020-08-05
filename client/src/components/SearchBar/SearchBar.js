@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Consumer} from '../../globalContext';
-
+import { Consumer } from '../../globalContext';
+import Button from '@material-ui/core/Button';
 
 
 class SearchBar extends Component {
@@ -59,7 +59,7 @@ class SearchBar extends Component {
                             
 
                             <h1> Search for Tools! </h1>
-                            <p> Enter Category of Tool </p>
+                            {/* <p> Enter Category of Tool </p> */}
 
                             <form onSubmit={this.searchTools.bind(this, dispatch)}>
                                 <input 
@@ -68,8 +68,13 @@ class SearchBar extends Component {
                                 name="searchTerms"
                                 value={this.state.searchTerms}
                                 onChange={this.onChange}
-                                ></input>
-                                <button type='submit' style={{padding: "10px"}}>Get Tools!</button>
+                                >
+                                
+                                </input>
+                                <Button type='submit' variant="contained" color="secondary">
+                                    Get Tools
+                                </Button>
+                                {/* <button type='submit' style={{padding: "10px"}}>Get Tools!</button> */}
                             </form>
                         </div>
                     );
