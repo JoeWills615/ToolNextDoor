@@ -9,7 +9,8 @@ import ToolView from './components/ToolView';
 import { Provider } from './globalContext';
 import About from './components/About';
 import Post from './components/Post';
-import Cart from './components/Cart'
+import Cart from './components/Cart';
+import OwnerView from './components/OwnerView';
 function App() {
   return (
 <Provider>
@@ -30,6 +31,9 @@ function App() {
          <Landing /> 
       </Route>
        <Route exact path="/tools/:id" component={ToolView}>
+         <ToolView />
+       </Route>
+       <Route exact path="/owner/:id" component={OwnerView}>
          <ToolView />
        </Route>
        <Route exact path="/cart">
