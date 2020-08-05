@@ -41,7 +41,7 @@ A quick over of the app, then you have the choice of finding a tool to rent, or 
 <br/>
 <br/>
 
-A selction of tools in the search fild
+A selction of tools in the search field
 
 <img src="./readmePics/toolnextdoor_03.PNG">
 
