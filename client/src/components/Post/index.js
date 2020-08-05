@@ -124,6 +124,8 @@ export default class PostPage extends Component {
                 </div>
                 <div align='center'>
                 <Button
+                    type='submit
+                    value='Submit
                     variant="contained"
                     color="secondary"
                     startIcon={<CloudUploadIcon />}
