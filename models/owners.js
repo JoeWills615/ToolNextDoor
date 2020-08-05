@@ -3,14 +3,7 @@ const Schema = mongoose.Schema;
 
 
 const ownerSchema = new mongoose.Schema({
-    _id: {
-        type: Schema.Types.ObjectId
-    },
-    firstName: {
-        type: String,
-        required: true
-    },
-    lastName: {
+    fullName: {
         type: String,
         required: true
     },
@@ -20,7 +13,7 @@ const ownerSchema = new mongoose.Schema({
         default: ""
     },
     tools: [{
-        type: Schema.Types.ObjectId,
+        type: Schema.Types.Mixed,
         ref: "Tool"
     }]
 });

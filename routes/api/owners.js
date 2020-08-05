@@ -8,7 +8,7 @@ router.route("/")
 // Matches with "/api/owners/:id"
 router
   .route("/:id")
-  .get(ownersController.findById)
+  .get(ownersController.findByName)
   
 
 module.exports = router;

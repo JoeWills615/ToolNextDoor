@@ -12,5 +12,12 @@ module.exports = {
         .findById(req.params.id)
         .then(owner => res.json(owner))
         .catch(err => res.status(422).json(err));
+    },
+    findByName: (req, res) => {
+      const fname = req.params.id.replace("-", " ")
+      db.Owner
+        .find({fullName: fname})
+        .then(owner => res.json(owner))
+        .catch(err => res.status(422).json(err));
     }
   };
