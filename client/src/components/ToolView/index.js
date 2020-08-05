@@ -56,7 +56,7 @@ class ToolView extends Component {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            Rent
+             <Link color='secondary' href={`/cart/${tool.price}`}>Rent This Tool! </Link> 
         </Button>
           <Button size="small" color="primary">
             <Link href={`/owners/${owners}`}> View All Tools by This Owner </Link>
