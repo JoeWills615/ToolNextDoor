@@ -56,6 +56,8 @@ class SearchBar extends Component {
                     return (
                         // Can be changed to navbar category search to ensure results?
                         <div>
+                            
+
                             <h1> Search for Tools! </h1>
                             <p> Enter Category of Tool </p>
 
