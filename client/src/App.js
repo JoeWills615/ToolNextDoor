@@ -11,6 +11,8 @@ import About from './components/About';
 import Post from './components/Post';
 import Cart from './components/Cart';
 import OwnerView from './components/OwnerView';
+import Stripe from './components/stripe'
+
 function App() {
   return (
 <Provider>
@@ -36,8 +38,9 @@ function App() {
        <Route exact path="/owner/:id" component={OwnerView}>
          <ToolView />
        </Route>
-       <Route exact path="/cart">
-         <Cart /> 
+       <Route exact path="/cart/:id">
+        {/*  <Cart />  */}
+         <Stripe/>
       </Route>
      </Switch>
   </div>
