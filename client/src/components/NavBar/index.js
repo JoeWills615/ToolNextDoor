@@ -29,7 +29,7 @@ export default function ButtonAppBar() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static" color='dark'>
+            <AppBar position="static" color='secondary'>
                 <Toolbar>
                     <BuildIcon edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
