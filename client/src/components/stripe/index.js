@@ -7,6 +7,8 @@ import { Elements,
     } from '@stripe/react-stripe-js'
 
 import axios from 'axios'
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 const CheckoutForm = ({ success }) => {
    const stripe = useStripe();
@@ -40,14 +42,27 @@ const CheckoutForm = ({ success }) => {
     return ( 
     <form onSubmit={handleSubmit}style={{maxWidth: '400px', margin: '0 auto'}}>
         <h2>Price: ${url}</h2>
-        <img 
+        <br/>
+        <br/>
+        {/* <img 
         src='https://myuniversitymoney.com/wp-content/uploads/2014/12/money-tool.jpg'
         style={{ maxWidth: '50px'}}
-        />
-        <CardElement/>
-        <button  type="submit" disabled={!stripe}>
+        /> */}
+        <Typography>
+            <h3>
+                Pay with card
+            </h3>
+        </Typography>
+        <br/>
+        <CardElement />
+        <br/>
+        <br/>
+        {/* <button  type="submit" disabled={!stripe}>
             Pay
-        </button>
+        </button> */}
+        <Button variant="contained" color="secondary" type='submit' disabled={!stripe}>
+            Pay
+        </Button>
         </form>
     )
 }
@@ -67,7 +82,18 @@ const Stripe = () => {
    }
         return (
         
-                <Elements stripe={stripePromise}> Stripe Page
+                <Elements stripe={stripePromise}>
+                <Typography align="center">
+                    <h1>
+                        Tool Next Door
+                    </h1>
+                    <h3>
+                        Checkout cart
+                    </h3>
+                    <h3>
+                        Total
+                    </h3>
+                </Typography>
                 <CheckoutForm success={() => {
                     setStatus('success')
                 }}/>
