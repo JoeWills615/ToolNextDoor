@@ -100,6 +100,10 @@ GitHub
 
 HTML/CSS
 
+MongoDB
+
+Mongoose
+
 # Contributors
 Chris Ferguson [@cfergus7](https://github.com/cfergus7)
 
