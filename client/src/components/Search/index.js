@@ -110,8 +110,9 @@ export default function Album() {
                     <Button size="small" color="secondary">
                      <Link color='secondary' href={`/tools/${tool._id}`}> View Info </Link> 
                     </Button>
-                    <Button size="small" color="secondary">
-                      Rent
+
+                    <Button size="small" color="primary">
+                       <Link href={`/cart/${tool.price}`}>Rent This Tool! </Link> 
                     </Button>
                   </CardActions>
                 </Card>
