@@ -37,7 +37,7 @@ const ownerSeed = [
     },
 
 ];
-console.log(db);
+
 db.Owner.remove({})
   .then(() => db.Owner.collection.insertMany(ownerSeed))
   .then(data => {
