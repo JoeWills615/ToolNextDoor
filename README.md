@@ -79,8 +79,6 @@ Heroku -
 
 Heroku
 
-JAWSdb
-
 React
 
 Stripe
