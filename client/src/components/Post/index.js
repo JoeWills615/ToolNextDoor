@@ -130,7 +130,7 @@ export default class PostPage extends Component {
                     Upload
                 </Button>
             </div> */}
-                <input type='submit' value='Submit' />
+                <input type='submit' value='Submit' variant="contained" color="secondary" />
             </form>
         );
     }
