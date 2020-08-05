@@ -69,11 +69,18 @@ A tool that has been selected that gives you the image of the tool, price and th
 <br/>
 <br/>
 
+You can also see all the tools that specific owners have available to rent
+
+<img src="./readmePics/toolnextdoor_07.PNG">
+
+<br/>
+<br/>
+
 # Links
 
-GitHub - 
+GitHub - https://github.com/JoeWills615/ToolNextDoor
 
-Heroku -
+Heroku - https://shielded-temple-94953.herokuapp.com/
 
 # Technology_Used
 
@@ -96,7 +103,7 @@ HTML/CSS
 # Contributors
 Chris Ferguson [@cfergus7](https://github.com/cfergus7)
 
-Alex Taggert [@AlexTagg392](https://github.com/AlexTagg392)
+Alex Taggart [@AlexTagg392](https://github.com/AlexTagg392)
 
 Lex Pryor [@LexTheMenace](https://github.com/LexTheMenace)
 
